@@ -17,8 +17,7 @@
     "node": ">=8"
   },
   "dependencies": {
-    "braintreehttp": "^0.4.0",
-    "npm": "^6.4.0"
+    "braintreehttp": "^0.4.0"
   },
   "devDependencies": {
     "btoa": "^1.2.1",

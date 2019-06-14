@@ -23,9 +23,11 @@ function environment() {
     let clientId = process.env.PAYPAL_CLIENT_ID || '<<CLIENT-ID>>';
     let clientSecret = process.env.PAYPAL_CLIENT_SECRET || '<<CLIENT-SECRET>>';
 
-    return new checkoutNodeJssdk.core.SandboxEnvironment(
-        clientId, clientSecret
-    );
+    if (process.env.NODE_ENV === 'production') {
+        return new checkoutNodeJssdk.core.LiveEnvironment(clientId, clientSecret);
+     }
+
+    return new checkoutNodeJssdk.core.SandboxEnvironment(clientId, clientSecret);
 }
 
 async function prettyPrint(jsonData, pre=""){

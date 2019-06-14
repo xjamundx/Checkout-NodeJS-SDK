@@ -1,6 +1,6 @@
 {
   "name": "@paypal/checkout-server-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS SDK for PayPal Checkout APIs",
   "keywords": [],
   "homepage": "https://github.com/paypal/Checkout-NodeJS-SDK#readme",

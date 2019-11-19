@@ -213,11 +213,11 @@ You can start off by trying out [creating and capturing an order](https://github
 
 To try out different samples for both create and authorize intent check [this link](https://github.com/paypal/Checkout-NodeJS-SDK/tree/master/samples)
 
-Note: Update the `payPalClient.js` with your sandbox client credentials or pass your client credentials as environment variable whie executing the samples.
+Note: Update the `payPalClient.js` with your sandbox client credentials or pass your client credentials as environment variable while executing the samples.
 
 ## Note
 
-BraintreeHttpClient used as part of this project returns Promises
+PayPalHttpClient used as part of this project returns Promises
 
 You can read more about Promises here: https://www.promisejs.org/
 
